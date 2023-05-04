@@ -1,0 +1,228 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.header {
+	background-image: url(../img/bg-4.webp);
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.container {
+	padding: 0 15px;
+	// max-width: 1200px;
+	// max-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.menu {
+	position: absolute;
+	background-color: #090909;
+	opacity: 0.9;
+	border-radius: 18px;
+	border: 2px solid red;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	margin: 1px 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+
+.menu-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+}
+
+.menu-item {
+	display: block;
+}
+
+.menu-link {
+	display: inline-block;
+}
+
+.menu-contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 45px;
+
+	// .menu-contact__ru
+
+	&__ru {}
+
+	// .menu-contact__uk
+
+	&__uk {}
+}
+
+p {}
+
+.header-info {
+	padding-top: 110px;
+
+}
+
+.header-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.header-subtitle {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+}
+
+.header-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-bottom: 20px;
+
+	&:nth-child(3) {
+		margin-left: 50px;
+	}
+
+	&:nth-child(4) {
+		margin-left: 90px;
+	}
+
+	&:nth-child(5) {
+		margin-left: 140px;
+	}
+
+	&:nth-child(6) {
+		margin-left: 180px;
+	}
+
+	&:nth-child(7) {
+		margin-left: 240px;
+	}
+}
+
+
+
+.header-text-bill {
+	font-family: 'Bentham', serif;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 175px;
+	margin-left: 280px;
+}
+
+span.lozung {
+	font-size: 16px;
+
+	margin-left: 170px;
+}
+
+// бургер меню
+
+.header-btn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-btn {
+
+	left: 0;
+	top: 0px;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 3px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 10px);
+}
+
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 10px);
+}
+
+#menu,
+.header-btn {
+	display: none;
+}
+
+#menu {
+	position: fixed;
+	top: 0;
+	left: -20px;
+
+	width: 100%;
+	height: 100%;
+	padding-top: 70px;
+
+	background: black;
+	transform: translateX(-100%);
+	transition: transform 1s;
+}
+
+
+
+#menu.active {
+	transform: translateX(0);
+
+}
+
+#menu li {
+	list-style-type: none;
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+	display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+
+#contact {
+	display: none;
+}

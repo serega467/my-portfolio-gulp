@@ -1,0 +1,59 @@
+.about-me {}
+
+.container {
+    // чтобы в инспекторе элементов и при адаптиве, 
+    // первая страница не наезжала на вторую
+    max-height: unset !important;
+    position: relative;
+}
+
+#grid {
+    left: 0;
+    right: 0;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-title {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 40px 0 20px;
+    color: #fff;
+}
+
+.skills-subtitle {
+    font-size: 24px;
+    color: #fff;
+}
+
+.skills-items {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    grid-template-rows: repeat(3, 220px);
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+
+    // justify-items: center;
+
+    // place-items: center;
+    padding-bottom: 20px;
+     margin-top: 50px;
+   
+    margin: 0 auto;
+    padding: 20px 95px 30px;
+}
+
+.skills-items img {
+     background-image: cover;
+    width: 100%;
+
+}

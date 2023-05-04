@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1170px !important;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+html {
+	font-size: 16px;
+}
+
+html,
+body {
+	 min-height: 100vh;
+	// position: relative;
+}
+.container {
+	// min-height: 100vh;
+	// position: sticky;
+}
+.p-stycky {
+	position: sticky;
+}
+body {
+	font-size: 1rem;
+}
+
+ul,
+ol,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+ul {
+	padding-inline-start: 0;
+}
+
+a {
+	
+	cursor: pointer;
+}
+
+a:hover {
+	// чтобы ссылки не прыгали при наведении
+	margin-bottom: -1px;
+	color:aqua;
+	border-bottom: 1px solid aqua;
+	transform: scale(1.2);
+	transition: transform .3s ease-in-out;
+	position: static;
+}
+
+.bg-black {
+	margin-bottom: 50px;
+	background-color: #000;
+	border-radius: 40px;
+	
+}
